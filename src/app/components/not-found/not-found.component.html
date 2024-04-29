@@ -1,0 +1,13 @@
+<div
+  *ngIf="visible"
+  class="flex flex-col justify-center h-full items-center mt-8 text-2xl font-thin"
+>
+  {{ notFoundMessage }}
+  <a
+    href="#"
+    routerLink="{{ resetLinkRoute }}"
+    class="bg-[#fc5f5f] text-white text-base rounded-full p-3 m-4 hover:cursor-pointer hover:opacity-80"
+    (click)="resetSearchInput()"
+    >{{ resetLinkText }}</a
+  >
+</div>
